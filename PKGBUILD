@@ -1,6 +1,6 @@
 pkgname=qt6-qtspeech
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Qt Speech support"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -25,7 +25,7 @@ makedepends=(
     'speech-dispatcher'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(04d4081bc9be3024021a7961bc64c695c8057e65eb0ccf5a93436c1eebb20bf5)
+sha256sums=(1991ea5baa25245e2ef98e6c13687a3b31c8a941bf8778061513033a9b4ce22d)
 
 build() {
     cd ${pkgname#*-}
